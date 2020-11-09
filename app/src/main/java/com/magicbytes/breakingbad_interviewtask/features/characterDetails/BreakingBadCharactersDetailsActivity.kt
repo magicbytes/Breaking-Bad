@@ -18,6 +18,8 @@ class BreakingBadCharactersDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_breaking_bad_characters_details)
 
+        title = character.name
+
         showCharacterInformation()
     }
 
