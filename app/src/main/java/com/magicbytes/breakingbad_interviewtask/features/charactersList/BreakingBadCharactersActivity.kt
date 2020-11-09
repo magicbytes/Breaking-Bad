@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.magicbytes.breakingbad_interviewtask.R
 import com.magicbytes.breakingbad_interviewtask.domain.BreakingBadCharacter
+import com.magicbytes.breakingbad_interviewtask.features.characterDetails.BreakingBadCharactersDetailsActivity
 import kotlinx.android.synthetic.main.activity_breaking_bad_characters.*
 
 class BreakingBadCharactersActivity : AppCompatActivity() {
@@ -33,6 +34,6 @@ class BreakingBadCharactersActivity : AppCompatActivity() {
     }
 
     private fun showDetails(breakingBadCharacter: BreakingBadCharacter) {
-
+        BreakingBadCharactersDetailsActivity.start(this, breakingBadCharacter)
     }
 }

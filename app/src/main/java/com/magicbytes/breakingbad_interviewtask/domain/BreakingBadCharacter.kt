@@ -11,4 +11,14 @@ data class BreakingBadCharacter(
     val nickname: String,
     val seasonAppearance: List<Int>,
     val occupations: List<String>
-) : Parcelable
+) : Parcelable {
+
+    val appearances: String
+        get() {
+            return if (seasonAppearance.isEmpty()) {
+                "-"
+            } else {
+                seasonAppearance.joinToString(", ")
+            }
+        }
+}

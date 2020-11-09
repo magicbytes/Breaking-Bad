@@ -17,11 +17,11 @@ class BreakingBadCharactersViewHolder(parent: ViewGroup, onClick: (adapterPositi
         itemView.setOnClickListener { onClick(adapterPosition) }
     }
 
-    fun onBind(breakingBadCh: BreakingBadCharacter) {
+    fun onBind(character: BreakingBadCharacter) {
         Picasso.get()
-            .load(breakingBadCh.imageUrl)
+            .load(character.imageUrl)
             .into(itemView.profileImageView)
 
-        itemView.nameTextView.text = breakingBadCh.name
+        itemView.nameTextView.text = character.name
     }
 }
