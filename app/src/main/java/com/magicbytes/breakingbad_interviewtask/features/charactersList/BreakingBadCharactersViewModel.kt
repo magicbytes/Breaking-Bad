@@ -1,3 +1,6 @@
+package com.magicbytes.breakingbad_interviewtask.features.charactersList
+
+import BreakingBadCharactersRepository
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -13,7 +16,7 @@ class BreakingBadCharactersViewModel(private val charactersRepo: BreakingBadChar
     private val _characters = MutableLiveData<List<BreakingBadCharacter>>()
     private val _isLoading = MutableLiveData<Boolean>()
 
-    val charachters: LiveData<List<BreakingBadCharacter>>
+    val characters: LiveData<List<BreakingBadCharacter>>
         get() = _characters
 
     val isLoading: LiveData<Boolean>

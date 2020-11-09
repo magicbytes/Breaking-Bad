@@ -1,11 +1,10 @@
-package com.magicbytes.breakingbad_interviewtask
+package com.magicbytes.breakingbad_interviewtask.features.charactersList
 
 import BreakingBadCharactersAdapter
-import BreakingBadCharactersViewModel
-import BreakingBadCharactersViewModelFactory
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import com.magicbytes.breakingbad_interviewtask.R
 import com.magicbytes.breakingbad_interviewtask.domain.BreakingBadCharacter
 import kotlinx.android.synthetic.main.activity_breaking_bad_characters.*
 
@@ -28,7 +27,7 @@ class BreakingBadCharactersActivity : AppCompatActivity() {
         viewModel.isLoading.observe(this) {
             swipeToRefreshLayout.isRefreshing = it
         }
-        viewModel.charachters.observe(this) {
+        viewModel.characters.observe(this) {
             adapter.breakingBadCharacters = it
         }
     }

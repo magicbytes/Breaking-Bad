@@ -1,6 +1,6 @@
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.magicbytes.breakingbad_interviewtask.adapter.BreakingBadCharactersViewHolder
+import com.magicbytes.breakingbad_interviewtask.features.charactersList.adapter.BreakingBadCharactersViewHolder
 import com.magicbytes.breakingbad_interviewtask.domain.BreakingBadCharacter
 
 class BreakingBadCharactersAdapter(private val onClick: (breakingBadCh: BreakingBadCharacter) -> Unit) :

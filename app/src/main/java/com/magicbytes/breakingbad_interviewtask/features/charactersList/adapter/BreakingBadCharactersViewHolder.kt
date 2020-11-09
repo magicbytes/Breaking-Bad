@@ -1,4 +1,4 @@
-package com.magicbytes.breakingbad_interviewtask.adapter
+package com.magicbytes.breakingbad_interviewtask.features.charactersList.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
